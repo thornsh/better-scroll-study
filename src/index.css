@@ -1,0 +1,22 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.wrapper-inside-container{
+  height: 100vh;
+  position: relative;
+}
+.wrapper-inside{
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #333333;
+}
+.wrapper-outside-container{
+  position: absolute;
+  bottom: 0;
+  height: 30vh;
+  width: 100vw;
+  background-color: #ffffff;
+  overflow: hidden;
+}

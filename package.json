@@ -1,0 +1,10 @@
+{
+  "name": "better-scroll-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "better-scroll": "^2.1.1"
+  }
+}
