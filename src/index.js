@@ -33,16 +33,16 @@ let bsOutside = BetterScroll.createBScroll('.wrapper-outside-container',{
 
 
 let wrapperTop = BetterScroll.createBScroll('.wrapper-outside-div',{})
-const hooks = wrapperTop.scroller.actionsHandler.hooks
-  hooks.on('move',function(e){
-    console.log(e.e.path[0].getAttribute("data-move"));
-    let dataMove = e.e.path[0].getAttribute("data-move");
-    if(dataMove!=null){
-      console.log(e.deltaY);
-      $(".wrapper-outside-container").css("height",$(".wrapper-outside-container").height()-e.deltaY);
-      $(".wrapper-inside").css("height",$(".wrapper-inside").height()+e.deltaY);
-      bsOutside.refresh();
-      bsInside.refresh();
-    }
-    
-  })
+const hooks = wrapperTop.scroller.actionsHandler.hooks;
+hooks.on('move', function (e) {
+  console.log(e.e.path[0].getAttribute("data-move"));
+  let dataMove = e.e.path[0].getAttribute("data-move");
+  if (dataMove != null) {
+    console.log(e.deltaY);
+    $(".wrapper-outside-container").css("height", $(".wrapper-outside-container").height() - e.deltaY);
+    $(".wrapper-inside").css("height", $(".wrapper-inside").height() + e.deltaY);
+    bsOutside.refresh();
+    bsInside.refresh();
+  }
+
+})
