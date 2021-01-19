@@ -12,11 +12,18 @@ body{
   overflow: hidden;
   background-color: #333333;
 }
-.wrapper-outside-container{
+.wrapper-outside-div{
   position: absolute;
   bottom: 0;
-  height: 30vh;
   width: 100vw;
+}
+.wrapper-outside-container{
+  /* position: absolute;
+  bottom: 0; */
+  /* height: 30vh;
+  width: 100vw; */
+  height: 25vh;
+  position: relative;
   background-color: #ffffff;
   overflow: hidden;
 }
